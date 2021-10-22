@@ -33,6 +33,7 @@ namespace Business
                     foreach (var prop in props)
                     {
                         //TODO: Strategy pattern voor welke properties weergeven worden
+                        //SyndicationFeed mag je gebruiken als je ook strategy pattern implementeerd
                         if (prop.GetValue(item) != null)
                             content += prop.Name.ToString() + ": " + prop.GetValue(item).ToString() + "\n";
                     }
